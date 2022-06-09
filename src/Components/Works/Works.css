@@ -1,0 +1,155 @@
+.works {
+    padding: 0 3rem;
+    display: flex;
+    height: 90vh;
+    margin-bottom: 8rem;
+    margin-top: 4rem;
+}
+
+.w-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.w-left >:nth-child(1) {
+    color: var(--black);
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.w-left >:nth-child(2) {
+    color: var(--orange);
+    font-size: 3rem;
+    font-weight: bold;
+}
+.w-left> :nth-child(3) {
+    font-weight: 100;
+    font-size: 14px;
+    color: var(--gray);
+    margin-top: 10px;
+}
+
+.w-right{
+    flex: 1;
+    position: relative;
+}
+
+.w-mainCircle {
+    position: relative;
+    left: 9rem;
+    width: 18rem;
+    height: 18rem;
+    border-radius: 100%;
+    box-shadow: var(--smboxShadow);
+    top: 2rem;
+    background-color: white;
+}
+
+.w-mainCircle >*{
+    position: absolute;
+    border-radius: 100%;
+    border: 5px solid #ebebeb;
+    background: white;
+}
+
+.w-mainCircle > :nth-child(1){
+    top: -3rem;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    width: 6rem;
+    height: 6rem;
+    margin: auto;
+}
+.w-mainCircle > :nth-child(2){
+    bottom: -3rem;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    width: 6rem;
+    height: 6rem;
+    margin: auto;
+}
+.w-mainCircle > :nth-child(3){
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 6rem;
+    height: 6rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.w-mainCircle > :nth-child(4){
+    top: 0;
+    left: -3rem;
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    width: 6rem;
+    height: 6rem;
+}
+.w-mainCircle > :nth-child(5){
+    top: 0;
+    right: -3rem;
+    bottom: 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 6rem;
+    height: 6rem;
+}
+
+.w-secCircle> img{
+    width: 3.5rem;
+    margin: auto;
+}
+
+.backCircle{
+    position: absolute;
+    height: 13rem;
+    width: 13rem;
+    border-radius: 100%;
+    z-index:-1;
+}
+.blueCircle {
+    background: #1949bb;
+    left: 18rem;
+    top: 0;
+}
+.yellowCircle {
+    background: #f5c32c;
+    left: 18rem;
+    top: 8rem;
+}
+
+.w-blur2{
+    top: -9rem;
+}
+
+@media (max-width:479px){
+    .works{
+        flex-direction: column;
+        padding: 0.5rem 1rem;
+        justify-content: center;
+        gap: 5rem;
+        height: 55rem;
+    }
+    .w-right{
+        transform: scale(0.7);
+    }
+    .w-mainCircle{
+        left: 0;
+        margin: auto;
+    }
+}

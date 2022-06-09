@@ -1,0 +1,98 @@
+.services {
+    padding: 0 3rem;
+    display: flex;
+    height: 90vh;
+    margin-bottom: 8rem;
+    margin-top: 9rem;
+}
+
+.awesome {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.awesome >:nth-child(1) {
+    color: var(--black);
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.awesome >:nth-child(2) {
+    color: var(--orange);
+    font-size: 3rem;
+    font-weight: bold;
+}
+.awesome> :nth-child(3) {
+    font-weight: 100;
+    font-size: 14px;
+    color: var(--gray);
+    margin-top: 10px;
+}
+
+.s-button{
+    width: fit-content;
+    margin-top: 2rem;
+}
+.cards{
+    position: relative;
+}
+.cards >*{
+    position: absolute;
+}
+
+.s-blur1{
+    top: 12rem;
+    left: -13rem;
+}
+.s-blur2{
+    left: 50rem;
+    top: 8rem;
+}
+
+@media (max-width:1099px){
+    .services{
+        flex-direction: column;
+        height: 52rem;
+    }    
+    .cards{
+        flex: 1;
+        margin-left: 25%;
+    }
+}
+
+@media (max-width:799px){ 
+    .cards{
+        flex: 1;
+        margin-left: 10%;
+    }
+}
+
+@media (max-width:671px){ 
+    .services{
+        gap: 5rem;
+        height: 78rem;
+        padding: 0;
+    }
+    .cards{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+    }
+    .cards>*{
+        position: static;
+    }
+    .cards .card{
+        position: static;
+    }
+}
+
+@media (max-width:479px){
+    .services{
+        margin-top: 0;
+        gap: 5rem;
+        height: 78rem;
+        padding: 0;
+    }
+}

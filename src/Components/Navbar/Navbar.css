@@ -1,0 +1,65 @@
+.n-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.n-left{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.n-name {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.n-right{
+    flex: 1;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    font-weight: 400;
+}
+
+.n-list {
+    flex:10;
+}
+
+.n-list> ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-right: 4rem;
+}
+
+.n-list> ul>li:hover{
+    color: var(--orange);
+}
+
+/* Utility Css */
+li{
+    list-style: none;
+    cursor: pointer;
+}
+
+.n-button {
+    flex: 2;
+}
+
+@media (max-width: 960px){
+    .n-list{
+        display: none;
+    }
+}
+@media (max-width: 479px){
+    .n-left{
+        justify-content: space-between;
+    }
+    .n-right{
+        display: none;
+    }
+}
